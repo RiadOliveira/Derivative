@@ -190,6 +190,10 @@
                     const functionReturn = document.getElementById('function-return').value;
                     const functionPoint = Number(document.getElementById('function-point').value);
                     const functionAddition = Number(document.getElementById('function-addition').value.replace(',', '.'));
+                    
+                    if(!functionReturn || !functionPoint || !functionAddition) {
+                        throw new Error();
+                    }
 
                     let letter;
                     const signals =  ['+', '-', '*', '/', '%'];
