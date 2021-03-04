@@ -1,0 +1,132 @@
+body {
+    padding: none;
+    background-color:#292b2f;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    background-color: #202225;
+    width: 100%;
+    padding: 20px 0 20px;
+    text-align: center;
+    box-shadow: 0px 0px 9px rgba(0,0,0, .4);
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+h1, h2, button {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+
+label, input, p, a {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #e9e9e9e9;
+}
+
+#main {
+    width: 620px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #36393f;
+    box-shadow: 0px 0px 9px rgba(0,0,0, .4);
+    position: relative;
+}
+
+@media(max-width: 620px) {
+    #main {
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+}
+
+#button-div {
+    width: 85%;
+    padding-bottom: 20px;
+
+    display: flex;
+
+    border-bottom: 2px solid #292b2f;
+}
+
+.label {
+    justify-content: space-between;
+    display: flex;
+    width: 85%;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input {
+    outline: 0;
+    background-color: #202225;
+    border: none;
+    height: 25px;
+    text-align: center;
+}
+
+.input-block {
+    position: relative;
+}
+
+.input-block:focus-within::after {
+    content: '';
+    width: calc(100% - 20px);
+    height: 2px;
+    background-color: #578b6e;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+button {
+    background-color: #578b6e;
+    border: none;
+    width: 100px;
+    margin: 20px 0 0 auto;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    outline: 0;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #49745b;
+}
+
+#credits {
+    position: absolute;
+    left: 7.5%;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#credits > p {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+#credits > a {
+    display: block;
+    width: fit-content;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #51c782;
+    font-size: 0.8rem;
+}
