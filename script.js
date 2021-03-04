@@ -1,5 +1,6 @@
+const inputs = Array.from(document.querySelectorAll('input'));
+
 function passInput(event, inputRef) {
-    const inputs = Array.from(document.querySelectorAll('input'));
     const inputIndex = inputs.findIndex((input) => input === inputRef);
 
     if(event.charCode === 13) {
