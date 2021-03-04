@@ -149,21 +149,21 @@
             <div class="label">
                 <label for="function-return">Indique o retorno da função f(x) (Exemplo: x**3):</label>
                 <div class="input-block">
-                    <input type="text" id="function-return"/> 
+                    <input onkeypress="passInput(event, this)" type="text" id="function-return"/> 
                 </div>
             </div> 
 
             <div class="label">
                 <label for="function-point">Indique o ponto de comparação na função:</label>
                 <div class="input-block">
-                    <input type="text" id="function-point"/> 
+                    <input onkeypress="passInput(event, this)" type="text" id="function-point"/> 
                 </div>
             </div>
 
             <div class="label">
                 <label for="function-addition">Indique o acréscimo do ponto (Próximo de 0):</label>
                 <div class="input-block">
-                    <input type="text" id="function-addition"/> 
+                    <input onkeypress="passInput(event, this)" type="text" id="function-addition"/> 
                 </div>
             </div>
 
@@ -185,6 +185,21 @@
 
 
         <script>
+            function passInput(event, inputRef) {
+                const inputs = Array.from(document.querySelectorAll('input'));
+                
+                const inputIndex = inputs.findIndex((input) => input === inputRef);
+
+                if(event.charCode === 13) {
+                    if(inputIndex === inputs.length - 1) {
+                        inputs[inputIndex].blur();
+                        createDerivative();
+                    } else {
+                        inputs[inputIndex+1].focus();
+                    }
+                }
+            }
+            
             function createDerivative() {
                 try {
                     const functionReturn = document.getElementById('function-return').value;
