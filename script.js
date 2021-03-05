@@ -47,8 +47,8 @@ function createDerivative() {
 
         const derivativeResult = derivative(functionPoint, functionAddition, derivativeFunction);
 
-        document.getElementById('final-value').innerText = derivativeResult;
         document.getElementById('result-head').innerText = "Resultado da derivada:";
+        document.getElementById('final-value').innerText = String(derivativeResult).replace('.', ',');
     } catch {
         alert("Ocorreu um erro: Verifique atentamente os dados preenchidos.");
     }
