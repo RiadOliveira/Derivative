@@ -29,7 +29,7 @@ function createDerivative() {
         for(let ind of functionReturn) {
             let verifyIfIsSignal = signals.find((item) => item === ind);
             
-            if(!Number(ind) && !verifyIfIsSignal) {
+            if(typeof Number(ind) !== 'number' && !verifyIfIsSignal) {
                 letter = ind;
                 break;
             }
