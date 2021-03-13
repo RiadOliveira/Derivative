@@ -50,6 +50,17 @@ function createDerivative() {
         document.getElementById('result-head').innerText = "Resultado da derivada:";
         document.getElementById('final-value').innerText = String(derivativeResult).replace('.', ',');
     } catch {
-        alert("Ocorreu um erro: Verifique atentamente os dados preenchidos.");
+        document.getElementById('result-head').innerText = "";
+        document.getElementById('final-value').innerText = "";
+
+        setTimeout(() => {
+            alert("Ocorreu um erro: Verifique atentamente os dados preenchidos.");
+        }, 2);
     }
+}
+
+function toggleCredits() {
+    const creditDiv = document.getElementById('credits');
+    const creditsStatus = window.getComputedStyle(creditDiv).display;
+    creditDiv.style.display = creditsStatus === 'none' ? 'flex' : 'none'; 
 }
