@@ -57,6 +57,7 @@ label, input, p, a {
     padding-bottom: 20px;
 
     display: flex;
+    justify-content: space-between;
 
     border-bottom: 2px solid #292b2f;
 }
@@ -73,8 +74,10 @@ input {
     outline: 0;
     background-color: #202225;
     border: none;
+    width: 160px;
     height: 25px;
     text-align: center;
+    padding: 0 10px;
 }
 
 .input-block {
@@ -92,12 +95,11 @@ input {
 }
 
 button {
-    background-color: #578b6e;
     border: none;
     width: 100px;
-    margin: 20px 0 0 auto;
     height: 40px;
     cursor: pointer;
+    margin-top: 20px;
     border-radius: 8px;
     font-weight: 700;
     font-size: 16px;
@@ -105,15 +107,27 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+#calc-button{
+    background-color: #578b6e;
+}
+
+#calc-button:hover {
     background-color: #49745b;
+}
+
+#credits-button {
+    background-color: #202225;
+}
+
+#credits-button:hover {
+    background-color: #1a1b1c;
 }
 
 #credits {
     position: absolute;
     left: 7.5%;
     bottom: 5px;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
