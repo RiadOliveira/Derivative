@@ -15,11 +15,11 @@ function passInput(event, inputRef) {
 
 function createDerivative() {
     try {
-        const functionReturn = document.getElementById('function-return').value;
-        const functionPoint = Number(document.getElementById('function-point').value);
+        const functionReturn = document.getElementById('function-return').value.replace(',', '.');
+        const functionPoint = Number(document.getElementById('function-point').value.replace(',', '.'));
         const functionAddition = Number(document.getElementById('function-addition').value.replace(',', '.'));
         
-        if(!functionReturn || !functionPoint || !functionAddition) {
+        if(!functionReturn || typeof functionPoint != 'number' || !functionAddition) {
             throw new Error();
         }
 
