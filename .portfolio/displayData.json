@@ -1,0 +1,29 @@
+{
+  "title": "Derivative",
+  "extendedDescription": "A simple web application created to provide an easy way to calculate derivatives using numerical methods. It was developed using only HTML, CSS and JS.",
+  "imageId": "ffa39dbb-0fd1-4011-839f-de7dbe5e4e46",
+  "highlightColor": "green",
+  "technologies": [
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ],
+  "attachmentsUrl": true,
+  "features": [
+    {
+      "name": "Derivative Calculation",
+      "description": "Numerical derivative computation using limit definition with precision control.",
+      "icon": "calculator"
+    },
+    {
+      "name": "User Interface",
+      "description": "Intuitive input system for function and parameter entry.",
+      "icon": "desktop"
+    },
+    {
+      "name": "Keyboard Support",
+      "description": "Enhanced navigation with keyboard shortcuts and Enter key submission.",
+      "icon": "keyboard"
+    }
+  ]
+}
