@@ -1,7 +1,7 @@
 <h1 align="center">Derivative</h1>
 
 <p align="center">
-  A simple web application created to provide an easy way to calculate derivatives using numerical methods.
+  A simple web application created to provide an easy way to calculate derivatives using numerical methods. It was developed using only HTML, CSS and JS.
 </p>
 
 ![image](https://github.com/user-attachments/assets/ffa39dbb-0fd1-4011-839f-de7dbe5e4e46)
