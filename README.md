@@ -32,7 +32,7 @@ Built with:
 
 <h3 id="demo">Live Demo</h3>
 The application is hosted on GitHub Pages and can be accessed directly:
-<a href="https://riadoliveira.github.io/Derivative/">https://riadoliveira.github.io/Derivative/</a>
+<a href="https://riadoliveira.github.io/Derivative/">https://riadoliveira.github.io/Derivative/</a>.
 
 <h3 id="setup">Local Setup</h3>
 To run the application locally, simply clone the repository and open the index.html file in your browser:
